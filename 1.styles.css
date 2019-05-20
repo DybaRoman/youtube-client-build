@@ -1,0 +1,181 @@
+/* main part */
+body {
+  background-color: rgb(47, 56, 47);
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+a:active,
+a:hover,
+a:visited,
+a {
+
+  text-decoration: none;
+}
+
+.main__container {
+  width: 100%;
+}
+
+/* searchbox part */
+.search__box__container {
+  width: 100%;
+  text-align: center;
+}
+
+.search__box {
+  width: 80%;
+  height: 30px;
+
+  padding: 0 5%;
+
+  margin: 10px 0;
+  border-radius: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  color: darkgreen;
+  background-color: bisque;
+}
+
+/* nav part */
+.nav__container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__container button {
+  height: 40px;
+  width: 40px;
+
+  margin: 10px 15px;
+  border-radius: 50%;
+  background-color: bisque;
+  box-shadow: none;
+}
+
+.prev__pop, .next__pop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  width: 40px;
+
+  margin: 10px 15px;
+  border-radius: 5%;
+
+  background-color: lightgreen;
+  box-shadow: none;
+}
+
+/* clips part */
+.clip__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__box {
+  display: flex;
+  align-items: center;
+
+  width: 1280px;
+  height: 500px;
+
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+
+@media (max-width: 1280px) {
+  .slider__box{width: 960px;}
+}
+
+@media (max-width: 960px) {
+  .slider__box{width: 640px;}
+}
+
+@media (max-width: 640px) {
+  .slider__box{width: 320px;}
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.grab {
+  cursor: grabbing;
+}
+
+.clip__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* position: relative; */
+
+  margin: 5px 10px;
+  height: 500px;
+  width: 300px;
+  background-color: bisque;
+  border-radius: 5px;
+
+}
+
+.clip__title {
+  height: 70px;
+  width: 90%;
+  margin: 5px 0;
+  /* background-color: inherit; */
+  border-radius: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clip__picture__container {
+  height: 170px;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0;
+}
+
+.clip__picture {
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.clip__info {
+  height: 30px;
+  margin: 5 auto;
+}
+
+.clip__info_icon {
+}
+
+.clip__info_text {
+}
+
+.channel__name {
+}
+
+.upload__date {
+}
+
+.view__count {
+}
+
+.clip__description {
+  height: 125px;
+  width: 96%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px auto;
+  margin-top: 10px;
+}
+
+
+/*# sourceMappingURL=1.styles.css.map*/
